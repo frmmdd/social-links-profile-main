@@ -5,12 +5,10 @@
     export let link;
 </script>
 
-<button>
-    <a href={link} target="_blank">{text}</a>
-</button>
+<a class="button" href={link} target="_blank">{text}</a>
 
 <style>
-    button {
+    .button {
         all: unset;
         background-color: hsl(0, 0%, 20%);
         border-radius: 0.4em;
@@ -20,9 +18,9 @@
         text-align: center;
     }
 
-    button:hover,
-    button:focus,
-    button:focus-within {
+    .button:hover,
+    .button:focus,
+    .button:focus-within {
         background-color: hsl(75, 94%, 57%);
         color: hsl(0, 0%, 8%);
         cursor: pointer;
